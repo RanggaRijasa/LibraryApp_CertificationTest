@@ -62,36 +62,13 @@ Middleware:
 1) Clone project
 
 2) Install dependency PHP
-composer install
 
 3) Copy environment
-copy .env.example .env
-php artisan key:generate
 
 4) Buat database MySQL
 
-Di phpMyAdmin buat database, contoh:
-
-perpustakaan_db
-
-Lalu set .env:
-
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=perpustakaan_db
-DB_USERNAME=root
-DB_PASSWORD=
-
 5) Migrate database
-php artisan migrate
 
-Jika pernah error tabel sudah ada, gunakan:
+6) Install & build asset
 
-php artisan migrate:fresh
-
-6) Install & build asset (Tailwind/Vite)
-npm install
-npm run build
-
-7) Jalankan server
+8) Jalankan server
