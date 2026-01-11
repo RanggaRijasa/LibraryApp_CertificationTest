@@ -21,9 +21,7 @@
                             {{ __('Master Buku') }}
                         </x-nav-link>
 
-                        <x-nav-link :href="route('loans.index')" :active="request()->routeIs('loans.*')">
-                            {{ __('Peminjaman') }}
-                        </x-nav-link>
+                       
                     @else
                         <x-nav-link :href="route('catalog')" :active="request()->routeIs('catalog')">
                             {{ __('Katalog') }}
@@ -88,9 +86,7 @@
                     {{ __('Master Buku') }}
                 </x-responsive-nav-link>
 
-                <x-responsive-nav-link :href="route('loans.index')" :active="request()->routeIs('loans.*')">
-                    {{ __('Peminjaman') }}
-                </x-responsive-nav-link>
+             
             @else
                 <x-responsive-nav-link :href="route('catalog')" :active="request()->routeIs('catalog')">
                     {{ __('Katalog') }}
